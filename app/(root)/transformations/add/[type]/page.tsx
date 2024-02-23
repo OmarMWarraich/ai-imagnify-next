@@ -1,10 +1,16 @@
-import React from 'react'
+import Header from '@/components/shared/Header'
+import { transformationTypes } from '@/constants'
 
-type Props = {}
+const AddTransformationTypePage = async ({ params: { type } }: SearchParamProps) => {
+  const transformation = transformationTypes[type];
 
-const AddTransformationTypePage = (props: Props) => {
   return (
-    <div>AddTransformationTypePage</div>
+    <>
+      <Header
+        title={transformation.title}
+        subtitle={transformation.subTitle}
+      />
+    </>
   )
 }
 
