@@ -7,7 +7,6 @@ const Home = (props: Props) => {
   return (
     <>
       <p>Home</p>
-      <UserButton afterSignOutUrl="/" />
     </>
   )
 }
